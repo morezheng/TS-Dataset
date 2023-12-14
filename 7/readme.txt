@@ -1,0 +1,2 @@
+The goal of this study was to forecast the return of the S&P500 using text mining and technical analysis methods. We used the dataset from investing.com and various financial platforms that included two years of data. Using techniques such as word embedding, we converted text data into numerical vectors, which we then fed into regression models.
+本研究的目标是使用文本挖掘和技术分析方法来预测标准普尔??500??指数的回报。我们使用了investing.com??和各种金融平台的 数据集，其中包括两年的数据。使用词嵌入等技术，我们将文本数据转换为数值向量，然后将其输入回归模型
