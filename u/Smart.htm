@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="author" content="Thomas Weibel" />
+  <meta name="generator" content="GNU/Emacs" />
+<!--  <link rel="shortcut icon" href="https://traces.cs.umass.edu/pub/skins/beeblebrox/images/favicon.ico" /> -->
+
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none;}
+
+--></style>  <meta name='robots' content='index,follow' />
+
+
+  <style type="text/css">
+    @import url(https://traces.cs.umass.edu/pub/skins/beeblebrox/gila.css);
+  </style>
+
+  <!-- externalLinks(): to use rel='external' instead target='_blank' -->
+  <script type="text/javascript">
+    <!--
+    function externalLinks() {
+      if (!document.getElementsByTagName) return;
+      var anchors = document.getElementsByTagName("a");
+      for (var i=0; i<anchors.length; i++) {
+        var anchor = anchors[i];
+        if (anchor.getAttribute("href") &&
+          anchor.getAttribute("rel") == "external")
+            anchor.target = "_blank";
+      }
+    }
+    window.onload = externalLinks;
+    -->
+  </script>
+  <!-- /externalLinks() -->
+  
+  <title>Smart - UMass Trace Repository</title>
+</head>
+
+<body>
+
+  <!-- Wiki header -->
+  <div id="header">
+    <h1 class="headerTitle"><a href='/'>U<span>Mass</span>Trace<span>Repository</span></a></h1>
+  </div>
+<!--
+  <form id="headerSearch" action='https://traces.cs.umass.edu/index.php/Site/Search'>
+    <div>
+    <input type='hidden' name='pagename' value='Site/Search'/>
+    <label for='searchbox'>Search</label> 
+    <input id='searchbox' class='searchbox' type='text' name='q' value='' />
+    <input class='searchbutton' type='submit' value='&raquo;' />
+    </div>
+  </form>
+-->
+  <!-- /Wiki header -->
+  
+  <!-- Wiki navigation -->
+  <!--PageLeftFmt-->
+  <div class="wikileft">
+    <div id="sidebar">
+      <p class='sidehead'> <a class='wikilink' href='https://traces.cs.umass.edu/index.php/Main/HomePage'>HomePage</a>
+</p><ul><li><a class='wikilink' href='https://traces.cs.umass.edu/index.php/Main/About'>About / FAQ</a>
+</li><li><a class='wikilink' href='https://traces.cs.umass.edu/index.php/Main/Contribute'>Contribute</a>
+</li></ul><p class='vspace sidehead'> <a class='wikilink' href='https://traces.cs.umass.edu/index.php/Main/Traces'>Traces</a>
+</p><ul><li><a class='wikilink' href='https://traces.cs.umass.edu/index.php/CpuMem/CpuMem'>Cpu &amp; Memory</a> (2)
+</li><li><a class='wikilink' href='https://traces.cs.umass.edu/index.php/Network/Network'>Network</a> (19)
+</li><li><a class='wikilink' href='https://traces.cs.umass.edu/index.php/Storage/Storage'>Storage</a> (2)
+</li><li><a class='wikilink' href='https://traces.cs.umass.edu/index.php/Sensors/Sensors'>Weather</a> (1)
+</li><li><a class='wikilink' href='https://traces.cs.umass.edu/index.php/Power/Power'>Power</a> (1)
+</li><li><a class='selflink' href='https://traces.cs.umass.edu/index.php/Smart/Smart'>Smart*</a> (15)
+</li><li><a class='wikilink' href='https://traces.cs.umass.edu/index.php/Mmsys/Mmsys'>Multimedia</a> (11)
+</li><li><a class='wikilink' href='https://traces.cs.umass.edu/index.php/Main/Cloud'>Cloud</a> (2)
+</li><li><a class='wikilink' href='https://traces.cs.umass.edu/index.php/Transportation/Transportation'>Transportation</a> (1)
+</li></ul><p class='vspace sidehead'> <a class='wikilink' href='https://traces.cs.umass.edu/index.php/Main/Software'>Software</a>
+</p><ul><li><a class='wikilink' href='https://traces.cs.umass.edu/index.php/Smart/Tools'>Smart* Tools</a> (2)
+</li><li><a class='wikilink' href='https://traces.cs.umass.edu/index.php/Main/Solar-TK'>Solar-TK</a> (1)
+</li></ul>
+
+    </div>
+  </div>
+  <!--/PageLeftFmt-->
+  <!-- /Wiki navigation -->
+  
+  
+  <!-- Wiki body -->
+  <div id="wikibody">
+    <!--PageHeaderFmt-->
+    
+    <!-- Wiki commands -->
+    <div id="wikicmds">
+      <a href="https://traces.cs.umass.edu/index.php/Smart/Smart?action=print" rel="external">print</a> 
+    </div>
+    <!-- /Wiki commands -->
+    
+    <!--PageTitleFmt-->
+    <div id="breadcrumbs">
+      <a href="https://traces.cs.umass.edu/index.php/Smart">Smart</a> &raquo; 
+      <a href="https://traces.cs.umass.edu/index.php/Smart/Smart">Smart</a>
+    </div>
+    <!--/PageTitleFmt-->
+
+    <div id="wikipage">
+      <!--PageText-->
+<div id='wikitext'>
+<h1>Smart* Data Set for Sustainability</h1>
+<p>The goal of the <a class='urllink' href='http://smart.cs.umass.edu' rel='nofollow'>Smart* project</a> is to optimize home energy consumption.  Available here is a wide variety of data collected from three real homes, including electrical (usage and generation), environmental (e.g., temperature and humidity), and operational (e.g., wall switch events).  Also available is minute-level electricity usage data from 400+ anonymous homes.  Please see the <a class='urllink' href='https://lass.cs.umass.edu/projects/smart-energy-and-smart-building.html' rel='nofollow'>Smart* home page</a> for general information about the project, or the <a class='wikilink' href='https://traces.cs.umass.edu/index.php/Smart/Tools'>Smart* Tools</a> download page for software that was used in the collection of this data.
+</p>
+<p class='vspace'><strong>Questions?</strong> All questions regarding these traces should be directed to <a class='urllink' href='mailto:erisinger@umass.edu' rel='nofollow'>Erik Risinger</a>.
+</p>
+<div class='vspace'></div><h2>Traces</h2>
+<hr />
+<p>All traces are in CSV format, with data fields named in the included FORMAT files. Please see our <a class='urllink' href='http://lass.cs.umass.edu/papers/pdf/sustkdd12-smart.pdf' rel='nofollow'>dataset paper</a> for further details.  Data collection and processing is ongoing, so check this page for future updates.
+</p>
+<div class='vspace'></div><h2>UMass Dataset - 2019</h2>
+<hr />
+<h3><strong>DeepRoof dataset</strong></h3>
+<p>The deeproof dataset contains satellite images of roofs along with the planar roof segments of each roof.  The folder also contains source code to visualize the dataset. 
+</p><ul><li>DeepRoof dataset :<a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/deeproof.tar.gz' rel='nofollow'><strong>deeproof.tar.gz</strong></a> (675 MB) SHA256:a51c3f5e63ada5c8ba7ff9dbbc209bb34d97c18b73a9ece09116cfeb1f628f21
+</li></ul><div class='vspace'></div><h2>UMass Smart* Dataset - 2017 release</h2>
+<hr />
+<div class='vspace'></div><h3><strong>Apartment dataset</strong></h3>
+<p>The apartment dataset contains data for 114 single-family apartments for the period 2014-2016. 
+</p><ul><li>Electrical dataset (aggregated):<a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/apartment-electrical.tar.gz' rel='nofollow'><strong>apartment-electrical.tar.gz</strong></a> (354 MB)
+</li><li>Weather dataset <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/apartment-weather.tar.gz' rel='nofollow'><strong>apartment-weather.tar.gz</strong></a> (642 kB)
+</li></ul><div class='vspace'></div><h3><strong>Home dataset</strong></h3>
+<p>The traces are made available for multiple years in CSV format and includes a SUMMARY for each file. 
+</p>
+<div class='vspace'></div><ul><li><strong>HomeA</strong>
+<ul><li>Electrical dataset (aggregated and individual circuits):<a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/HomeA-electrical.tar.gz' rel='nofollow'><strong>HomeA-electrical.tar.gz</strong></a> (24 MB)
+</li><li>Weather dataset <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/HomeA-weather.tar.gz' rel='nofollow'><strong>HomeA-weather.tar.gz</strong></a> (651 kB)
+</li></ul></li><li><strong>HomeB</strong>
+<ul><li>Electrical dataset (aggregated and individual circuits):<a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/HomeB-electrical.tar.gz' rel='nofollow'><strong>HomeB-electrical.tar.gz</strong></a> (24 MB)
+</li><li>Weather dataset <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/HomeB-weather.tar.gz' rel='nofollow'><strong>HomeB-weather.tar.gz</strong></a> (643 kB)
+</li></ul></li><li><strong>HomeC</strong>
+<ul><li>Electrical dataset (aggregated and individual circuits):<a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/HomeC-electrical.tar.gz' rel='nofollow'><strong>HomeC-electrical.tar.gz</strong></a> (28 MB)
+</li><li>Weather dataset <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/HomeC-weather.tar.gz' rel='nofollow'><strong>HomeC-weather.tar.gz</strong></a> (642 kB)
+</li></ul></li><li><strong>HomeD</strong>
+<ul><li>Electrical dataset (aggregated and individual circuits):<a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/HomeD-electrical.tar.gz' rel='nofollow'><strong>HomeD-electrical.tar.gz</strong></a> (65 MB)
+</li><li>Weather dataset <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/HomeD-weather.tar.gz' rel='nofollow'><strong>HomeD-weather.tar.gz</strong></a> (435 kB)
+</li></ul></li><li><strong>HomeF</strong>
+<ul><li>Electrical dataset (aggregated and individual circuits):<a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/HomeF-electrical.tar.gz' rel='nofollow'><strong>HomeF-electrical.tar.gz</strong></a> (47 MB)
+</li><li>Weather dataset <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/HomeF-weather.tar.gz' rel='nofollow'><strong>HomeF-weather.tar.gz</strong></a> (642 kB)
+</li></ul></li><li><strong>HomeG</strong>
+<ul><li>Electrical dataset (aggregated and individual circuits):<a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/HomeG-electrical.tar.gz' rel='nofollow'><strong>HomeG-electrical.tar.gz</strong></a> (42 MB)
+</li><li>Weather dataset <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/HomeG-weather.tar.gz' rel='nofollow'><strong>HomeG-weather.tar.gz</strong></a> (433 kB)
+</li></ul></li><li><strong>HomeH</strong>
+<ul><li>Electrical dataset (aggregated and individual circuits):<a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/HomeH-electrical.tar.gz' rel='nofollow'><strong>HomeH-electrical.tar.gz</strong></a> (8.9 MB)
+</li><li>Weather dataset <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/HomeH-weather.tar.gz' rel='nofollow'><strong>HomeH-weather.tar.gz</strong></a> (216 kB)
+</li></ul></li></ul><div class='vspace'></div><h3><strong>NIOM occupancy dataset</strong></h3>
+<p>This dataset contains 3 weeks minute level aggregated energy data, and the ground truth occupancy status data for the same periods. This dataset is used to evaluate NIOM algorithm.
+</p>
+<div class='vspace'></div><ul><li><strong>Home A</strong>
+<ul><li><strong>Spring</strong>- Aggregated electrical data: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/Home-A-spring-energy.tar.gz' rel='nofollow'><strong>Home-A-spring-energy.tar.gz</strong></a> (80 kB)
+</li><li><strong>Spring</strong>- Ground truth occupancy status data (two occupants): <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/Home-A-spring-occupancy.tar.gz' rel='nofollow'><strong>Home-A-spring-occupancy.tar.gz</strong></a> (99 kB)
+</li><li><strong>Summer</strong>-Aggregated electrical data: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/Home-A-summer-energy.tar.gz' rel='nofollow'><strong>Home-A-summer_energy.tar.gz</strong></a> (82 kB)
+</li><li><strong>Summer</strong>-Ground truth Occupancy status data (two occupants): <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/Home-A-summer-occupancy.tar.gz' rel='nofollow'><strong>Home-A-summer-occupancy.tar.gz</strong></a> (99 kB)
+</li></ul></li><li><strong>Home B</strong> 
+<ul><li><strong>Summer</strong> - Aggregated electrical data: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/Home-B-summer-energy.tar.gz' rel='nofollow'><strong>Home-B-summer_energy.tar.gz</strong></a> (81 kB)
+</li><li><strong>Summer</strong> - Occupancy status data (two occupants): <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/Home-B-summer-occupancy.tar.gz' rel='nofollow'><strong>Home-B-summer.tar.gz</strong></a> (81 kB)
+</li></ul></li><li>All of the above: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/occupancy-niom.tar.gz' rel='nofollow'><strong>occupancy-niom.tar.gz</strong></a> (542 kB)
+</li></ul><div class='vspace'></div><h3><strong>Solar panel dataset</strong></h3>
+<p>This dataset contains 1 minute level solar generation data for 50 rooftop solar panels. This dataset is used in SunSpot paper to evaluate the accuracy of the SunSpot system.
+</p>
+<div class='vspace'></div><ul><li>Solar dataset: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/solar-panels.tar.gz' rel='nofollow'><strong>solar-panels.tar.gz</strong></a>
+</li></ul><div class='vspace'></div><h3><strong>SunDance dataset</strong></h3>
+<p>This dataset includes hourly energy data (net meter, solar generation) and weather data (weather condition data from public weather stations and apis) for 100 solar sites in North America from 2015/1/1 to 2016/1/1 used in SunDance paper.
+</p>
+<div class='vspace'></div><ul><li>Sundance dataset: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/sundance-data-release.tar.gz' rel='nofollow'><strong>sundance-data-release.tar.gz</strong></a> (58 MB)
+</li></ul><div class='vspace'></div><h3><strong>Physical-blackbox Model  Dataset</strong></h3>
+<p>This dataset includes the weather and the normalized solar generation data to learn the physical blackbox model (BuildSys'18). Also the code to model the shading effects is included.
+Code and dataset: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/2017/physicalmodel-data-release.tar.gz' rel='nofollow'><strong>physicalmodel-data-release.tar.gz</strong></a> (163 MB)
+</p>
+<div class='vspace'></div><h2>UMass Smart* Dataset - 2013 release</h2>
+<hr />
+<pre> <strong>Update (Apr 2013):</strong> The initial dataset release contained incorrect environmental data for homes A and B. 
+ Corrected environmental traces have been posted.
+</pre><div class='vspace'></div><h3><strong>Home dataset</strong></h3>
+<ul><li><strong>Home A</strong>
+<ul><li>Electrical data from circuits (and aggregate): <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeA-circuit.tar.gz' rel='nofollow'><strong>homeA-circuit.tar.gz</strong></a> (161 MB)
+</li><li>Electrical data from individual energy meters: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeA-meter.tar.gz' rel='nofollow'><strong>homeA-meter.tar.gz</strong></a> (3.2 MB)
+</li><li>Electrical data from dimmable and non-dimmable switches: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeA-switch.tar.gz' rel='nofollow'><strong>homeA-switch.tar.gz</strong></a> (145 KB)
+</li><li>Voltage and frequency data on both electrical phases: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeA-phase.tar.gz' rel='nofollow'><strong>homeA-phase.tar.gz</strong></a> (79 MB)
+</li><li>Environmental data (indoor and outdoor): <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeA-environmental.tar.gz' rel='nofollow'><strong>homeA-environmental.tar.gz</strong></a> (577 KB)
+</li><li>Furnace on/off data: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeA-furnace.tar.gz' rel='nofollow'><strong>homeA-furnace.tar.gz</strong></a> (2.2 KB)
+</li><li>Door open/close data: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeA-door.tar.gz' rel='nofollow'><strong>homeA-door.tar.gz</strong></a> (43 KB)
+</li><li>Motion detector data: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeA-motion.tar.gz' rel='nofollow'><strong>homeA-motion.tar.gz</strong></a> (560 KB)
+</li><li><strong>All of the above:</strong> <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeA-all.tar.gz' rel='nofollow'><strong>homeA-all.tar.gz</strong></a> (246 MB)
+</li></ul><div class='vspace'></div></li><li><strong>Home B</strong>
+<ul><li>Aggregate electrical data: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeB-power.tar.gz' rel='nofollow'><strong>homeB-power.tar.gz</strong></a> (25 MB)
+</li><li>Environmental data: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeB-environmental.tar.gz' rel='nofollow'><strong>homeB-environmental.tar.gz</strong></a> (446 KB)
+</li><li><strong>All of the above:</strong> <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeB-all.tar.gz' rel='nofollow'><strong>homeB-all.tar.gz</strong></a> (25 MB)
+</li></ul><div class='vspace'></div></li><li><strong>Home C</strong>
+<ul><li>Aggregate electrical data: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeC-power.tar.gz' rel='nofollow'><strong>homeC-power.tar.gz</strong></a> (27 MB)
+</li><li>Environmental data: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeC-environmental.tar.gz' rel='nofollow'><strong>homeC-environmental.tar.gz</strong></a> (1.2 MB)
+</li><li>Generation data (solar, wind, and battery voltage): <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeC-generation.tar.gz' rel='nofollow'><strong>homeC-generation.tar.gz</strong></a> (8.7 MB)
+</li><li><strong>All of the above:</strong> <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/homeC-all.tar.gz' rel='nofollow'><strong>homeC-all.tar.gz</strong></a> (36 MB)
+</li></ul><div class='vspace'></div></li><li><strong>Microgrid dataset</strong>
+<ul><li>Electrical data over a single 24-hour period from 443 unique homes: <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/microgrid.tar.gz' rel='nofollow'><strong>microgrid.tar.gz</strong></a> (3.5 MB)
+</li></ul></li></ul><div class='vspace'></div><h2>Solar-TK Dataset</h2>
+<hr />
+<p>This dataset contains solar generation data for 81 homes across the United States. The files are in CSV format and have three columns: Timestamps, Local_Time, and Solar. The files are named Home_N_X_Y.csv, where N is the home number, X and Y are the coarse latitude and longitude. The current version just has the letters X and Y. The coarse coordinates for the homes will be uploaded in the coming days.
+</p>
+<p class='vspace'>The dataset is available <a class='urllink' href='https://lass.cs.umass.edu/smarttraces/solar/processed.tar.gz' rel='nofollow'>here</a>.
+</p>
+<div class='vspace'></div><h2>Publications:</h2>
+<hr />
+<ul><li>[Home dataset] <strong>Smart*: An Open Data Set and Tools for Enabling Research in Sustainable Homes.</strong>  Sean Barker, Aditya Mishra, David Irwin, Emmanuel Cecchet, Prashant Shenoy, and Jeannie Albrecht.  <em>Proceedings of the 2012 Workshop on Data Mining Applications in Sustainability (SustKDD 2012)</em>, Beijing, China, August 2012.   <a class='urllink' href='http://lass.cs.umass.edu/papers/pdf/sustkdd12-smart.pdf' rel='nofollow'><strong>pdf</strong></a>
+</li><li>[Home dataset] <strong>SmartCharge: Cutting the Electricity Bill in Smart Homes with Energy Storage.</strong> Aditya Mishra, David Irwin, Prashant Shenoy, Jim Kurose, and Ting Zhu. <em>Proceedings of the 3rd International Conference on Future Energy Systems (e-Energy 2012)</em>, Madrid, Spain, May 2012. <a class='urllink' href='http://lass.cs.umass.edu/papers/pdf/eEnergy12-smartcharge.pdf' rel='nofollow'><strong>pdf</strong></a>
+</li><li>[Home dataset] <strong>SmartCap: Flattening Peak Electricity Demand in Smart Homes.</strong> Sean Barker, Aditya Mishra, David Irwin, Prashant Shenoy, and Jeannie Albrecht. <em>Proceedings of the 10th IEEE International Conference on Pervasive Computing and Communications (PerCom 2012)</em>, Lugano, Switzerland, March 2012.  <a class='urllink' href='http://lass.cs.umass.edu/papers/pdf/percom12-smartcap.pdf' rel='nofollow'><strong>pdf</strong></a>
+</li><li>[Home dataset] <strong>Exploiting Home Automation Protocols for Load Monitoring in Smart Buildings.</strong> David Irwin, Anthony Wu, Sean Barker, Aditya Mishra, Prashant Shenoy, and Jeannie Albrecht. <em>Proceedings of the 3rd ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Buildings (BuildSys 2011)</em>, Seattle, WA, November 2011. <a class='urllink' href='http://lass.cs.umass.edu/papers/pdf/buildsys11-insteon.pdf' rel='nofollow'><strong>pdf</strong></a>
+</li><li>[Home dataset] <strong>The Case for Efficient Renewable Energy Management for Smart Homes.</strong> Ting Zhu, Aditya Mishra, David Irwin, Navin Sharma, Prashant Shenoy, and Don Towsley. <em>Proceedings of the 3rd ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Buildings (BuildSys 2011)</em>, Seattle, WA, November 2011. <a class='urllink' href='http://lass.cs.umass.edu/papers/pdf/buildsys11-battery.pdf' rel='nofollow'><strong>pdf</strong></a>
+</li><li>[Solar dataset] <strong>SunSpot: Exposing the Location of Anonymous Solar-powered Homes.</strong> Dong Chen, Srinivasan Iyengar, David Irwin, Prashant Shenoy. Proceedings of the ACM International Conference on Systems for Energy Efficient Build Environments (Buildsys 2016), Palo Alto, CA, November 16-17, 2016 <a class='urllink' href='http://lass.cs.umass.edu/papers/pdf/buildsys-16-sunspot.pdf' rel='nofollow'><strong>pdf</strong></a>
+</li><li>[NIOM dataset] <strong>Non-Intrusive Occupancy Monitoring using Smart Meters.</strong> Dong Chen, Sean Barker, Adarsh Subbaswamy, David Irwin, and Prashant Shenoy. Proceedings of ACM BuildSys 2013, Rome, Italy, November 11-15, 2013 <a class='urllink' href='http://lass.cs.umass.edu/papers/pdf/buildsys13-Dchen.pdf' rel='nofollow'><strong>pdf</strong></a>
+</li><li>[SunDance dataset] <strong>SunDance: Black-box Behind-the-Meter Solar Disaggregation.</strong> Dong Chen, David Irwin. In Proceedings of the eighth ACM International Conference on Future Energy Systems (e-Energy'17), Hong Kong, 2017.
+</li><li>[Weatherman Dataset] <strong>Weatherman: Exposing Weather-based Privacy Threats in Big Energy Data.</strong> Dong Chen, David Irwin. In Proceedings of 2017 IEEE International Conference on Big Data (BigData'17), Boston, MA, USA, Dec 11-14, 2017.
+</li><li>[Physical-blackbox Model Dataset] <strong>Staring at the Sun: A Physical Black-box Solar Performance Model.</strong> Dong Chen, Joseph Breda, David Irwin. In Proc. of the 2018 ACM International Conference on Systems for Energy-Efficient Built Environments (BuildSys'18), 2018.
+</li><li>[DeepRoof Dataset] <strong>DeepRoof: A Data-driven Approach For Solar Potential Estimation for Rooftop Imagery.</strong> Stephen Lee, Srinivasan Iyengar, Menghong Feng, Prashant Shenoy, Subhransu Maji. Proceedings of 25th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD 2019), Anchorage, Alaska, August 2019.
+</li></ul>
+</div>
+
+    </div>
+  </div>
+  <!-- /Wiki body -->
+  
+  <!-- Wiki footer -->
+  <!--PageFooterFmt-->
+  <div id="wikifoot">
+    <div class="footnav">
+      <a href="https://traces.cs.umass.edu/index.php/Smart/Smart?action=login" accesskey="l">login</a> &middot;
+      <a href="https://traces.cs.umass.edu/index.php/Smart/Smart?action=print" rel="external">print</a> 
+    </div>
+
+    <div class="lastmod">
+      Page last modified on January 26, 2023, at 03:21 PM
+    </div>
+
+    <div class="copyright">
+      &nbsp;
+    </div>
+  </div>
+  <!--/PageFooterFmt-->
+  <!-- /Wiki footer -->
+
+</body>
+</html>
